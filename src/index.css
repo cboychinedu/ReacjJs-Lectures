@@ -1,0 +1,16 @@
+.img_display {
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+.counter_btn {
+  height: 100px;
+  background-color: black;
+  color: white;
+}
+
+.counter_btn_blue {
+  height: 100px;
+  background-color: rgb(39, 19, 140);
+  color: white;
+}

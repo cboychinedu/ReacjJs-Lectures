@@ -2,6 +2,7 @@
 import React from 'react'; 
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import ReactDom from 'react-dom'; 
+import './index.css'; 
 import Counter from './components/counter.jsx'; 
 import SetAttribute from './components/setAttribute.jsx'; 
 
