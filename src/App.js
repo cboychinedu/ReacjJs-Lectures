@@ -15,6 +15,8 @@ class App extends Component {
       <div className="App">
         <h1> My First React Application </h1> 
         <p> Welcome :) </p>
+
+        {/* Passing a "prop" called "state" into the Ninjas Component */}
         <Ninjas ninjas={this.state} /> 
 
         {/* Adding the Ninja Module as a nested components and add arguments*/}
