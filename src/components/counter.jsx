@@ -30,5 +30,5 @@ class Counter extends Component {
     }
 }
 
-// Exporing the "Counter" class component 
+// Exporting the "Counter" class component 
 export default Counter;
