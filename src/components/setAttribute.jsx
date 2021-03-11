@@ -9,6 +9,17 @@ class SetAttribute extends Component {
         imageUrl: 'https://picsum.photos/200'
     }; 
 
+    // Creating a method for handling the click event on 
+    // The submit button 
+    handleSubmit = () => {
+        console.log('Submit Button Clicked!'); 
+
+        // Setting the state OR Changing the state 
+        this.setState({ count: this.state.count + 1 })
+        console.log(this.state.count); 
+
+    }
+
     // Rendering the "setAttribute" component 
     render() {
         // Using destructing to get the actual imageUrl variable 
@@ -18,7 +29,13 @@ class SetAttribute extends Component {
         return (
             <React.Fragment>
                 <p> First Image </p>
-                <img class="img_display" id="" src={imageUrl} alt="random_image" /> 
+                <img className="img_display" id="" src={imageUrl} alt="random_image" /> 
+
+                {/* Working with events handlers */}
+                <input type="button" onClick={this.handleSubmit}
+                    className="submit" value="Submit" 
+                /> 
+
             </React.Fragment>
         ); 
     }

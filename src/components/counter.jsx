@@ -1,12 +1,12 @@
 // Importing the necessary modules 
 import React, { Component } from 'react'; 
 
-
 // Create a class called "Counter" 
 class Counter extends Component {
     // Setting the state 
     state = { 
         count: 0, 
+        listsItems: ['Item1', 'Item2', 'Item3', 'Item4', 'Item5'], 
      }; 
 
     // Creating a method "formatCount()" 
@@ -29,14 +29,30 @@ class Counter extends Component {
     }
 
     // Rendering the "Counter" component 
+    /* */  
     render() { 
+        // Getting the listItems using destructuring 
+        let { listsItems } = this.state; 
+
+        // Render the jsx template 
         return (  
             <React.Fragment>
                 <h3> Hello World From Counter. </h3>
                 <span> { this.formatCount() } </span>
 
                 {/* Adding a button to the root division */}
-                <input type="button" value="Counter" class={this.getClasses()} />
+                <input type="button" value="Counter" className={this.getClasses()} />
+
+                {/* Rendering a list of items in react */} 
+                <ul>
+                    { listsItems.map(tag => <li key={20} className="first-list"> { tag } </li>) }
+                </ul>
+
+                <ul>
+                    <li style={{backgroundColor: "red", fontSize: "30px"}}> Other Lists </li>
+                    <li> Other second Lists </li>
+                </ul>
+
             </React.Fragment>
             
         ); 

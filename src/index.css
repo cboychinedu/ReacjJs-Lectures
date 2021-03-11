@@ -14,3 +14,27 @@
   background-color: rgb(39, 19, 140);
   color: white;
 }
+
+#root {
+  float: right;
+}
+
+.submitBtn {
+  margin-left: 30px;
+  margin-top: 20px;
+  height: 50px;
+  width: 103px;
+  background-color: black;
+  color: white;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.para {
+  margin-top: 39px;
+  margin-left: 35px;
+  padding-left: 9px;
+  padding-top: 20px;
+  margin-bottom: 0rem;
+}
