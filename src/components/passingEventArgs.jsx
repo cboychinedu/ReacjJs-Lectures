@@ -46,9 +46,6 @@ class PassingArguments extends Component {
 
     /* Rendering the "PassingArguments" components */ 
     render() {
-        // Getting the value for count 
-        let { count } = this.state.count; 
-
         // Return the jsx template 
         return (
             <React.Fragment>

@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 class Counter extends Component {
     // Setting the state 
     state = { 
-        count: 0, 
+        count: this.props.value, 
         listsItems: ['Item1', 'Item2', 'Item3', 'Item4', 'Item5'], 
      }; 
 
@@ -33,11 +33,12 @@ class Counter extends Component {
     render() { 
         // Getting the listItems using destructuring 
         let { listsItems } = this.state; 
+        console.log(this.props); 
 
         // Render the jsx template 
         return (  
             <React.Fragment>
-                <h3> Hello World From Counter. </h3>
+                <h5> This is the first counter element. </h5>
                 <span> { this.formatCount() } </span>
 
                 {/* Adding a button to the root division */}
@@ -53,6 +54,8 @@ class Counter extends Component {
                     <li> Other second Lists </li>
                 </ul>
 
+                <button onClick={() => this.props.onDelete(this.props.keyValue)} className="btn btn-danger btn-sm m-2"> Delete </button>
+
             </React.Fragment>
             
         ); 
@@ -60,4 +63,4 @@ class Counter extends Component {
 }
 
 // Exporting the "Counter" class component 
-export default Counter;
+export { Counter };
